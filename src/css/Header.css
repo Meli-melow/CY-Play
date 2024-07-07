@@ -1,0 +1,259 @@
+
+
+
+body{
+  margin: 0;
+  height: 2000px;
+}
+
+div{
+  margin:0;
+  display: inline-block;
+}
+
+
+/*
+top design 
+logo + search bar + navgation buttons
+*/
+
+
+.top-bar{
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  background-color: #2660aa;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*
+logo design
+*/
+
+.left{
+  height: 100px;
+  flex: 1;
+  display: flex;
+ 
+
+}
+
+/*
+logo picture
+*/
+
+#cy-logo{
+  position: relative;
+  top: 4px;
+  left: 4px;
+  height: 95% ;
+  object-fit: contain;
+  left: 0;
+}
+
+/*
+logo text
+*/
+
+#cy-play-logo-Text{
+  margin: 0;
+  padding-top: 18px ;
+  display: inline-block;
+  font-family : Roboto , Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  letter-spacing: 10px;
+  padding-left: 10px;
+  color: white;
+
+}
+
+
+/*
+middle part of the header design
+*/
+
+.center{
+  justify-content: right;
+  vertical-align: middle;
+  top: 0;
+  height: 100px;
+  display: flex;
+  flex: 1;
+}
+
+/*
+search box design 
+*/
+
+
+#search-box{
+  position: relative;
+  left: -49px;
+  font-size: 20px;
+  margin-top: 30px;
+  height: 45px;
+  width: 400px;
+  padding-left:10px ;
+  padding-right: 40px;
+  border-radius: 10px;
+  border: 1px #2660aa;
+}
+
+#search-box:hover{
+  background-color: white;
+}
+
+#search-button{
+  left: -50px;
+  position: relative;
+  margin-top: 30px;
+  height: 45px;
+  width: 45px;
+  margin-left: 6px;
+  background-color: white ;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#search-button  :hover{
+  background-color: white;
+}
+
+#search-icon{
+  margin-top: 2px;
+  height: 60%;
+  width: 80%;
+}
+
+
+
+
+.right{
+  align-items: left;
+  height: 100px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+
+
+
+.account-div{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.basket-button{
+  border: none;
+  border-radius: 12px;
+  position: relative;
+  top: 26px;
+  margin: 0;
+  padding-left: 9px;
+  margin-right: 60px ;
+  height: 55px;
+  width:  55px;
+  font-size: 35px;
+  cursor: pointer;
+  background-color: #23589c;
+}
+
+.account-div{
+  margin-right:40px ;
+}
+
+#account-button{
+  padding: 0;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+
+}
+
+#account-name{
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  font-family: Roboto , Arial, Helvetica, sans-serif;
+  position: relative;
+  left: 20px;
+  cursor: pointer;
+  top: -6px;
+}
+
+#profile-picture{
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+
+
+
+#logout {
+  display: none;
+  padding: 12px 24px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  cursor: pointer;
+  color: black;
+  z-index: 1;
+}
+
+#logout:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+#logout:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  background-color: #39bda7;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+#logout:hover {
+  color: #ffffff;
+  border: 1px solid #39bda7;
+}
+
+#logout:hover:before {
+  top: -35%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+#logout:hover:after {
+  top: -45%;
+  background-color: #39bda7;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}

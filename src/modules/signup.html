@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/Header.css">
+  <link rel="stylesheet" href="/src/css/registration/signup-style.css">
+  <title>create account</title>
+</head>
+<body>
+  <div style="top: 0;" class="top-bar">
+    <div class="left">
+        <img id="cy-logo" src="/src//pictures/cy-logo-white.png" >
+        <p id="cy-play-logo-Text">PLAY</p>
+    </div>
+    <div class="center">
+            <input id="search-box" type="search" placeholder="Search...">
+            <button id="search-button" type="submit">
+                <img id="search-icon" src="/src//pictures/icons/search-icon.png" alt="">
+            </button>
+        
+    </div>
+    <div class="right">
+        <button class="basket-button">
+            &#128722;
+        </button>
+
+        <div class="account-div">
+            <button id="account-button">
+                <img id="profile-picture" src="/src/pictures/icons/profileicon.webp" alt="">
+            </button>
+            <p id="account-name">Se Connecter</p>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+<div class="wrapper">
+  <div class="title">
+     Register Form
+  </div>
+  <form id="registrationForm" >
+    <div class="field">
+      <input id="name" type="text" required>
+      <label>Nom</label>
+   </div>
+   <div class="field">
+    <input id="pronoun" type="text" required>
+    <label>Prenom</label>
+ </div>
+ <div class="field">
+  <input id="email" type="text" required>
+  <label>Email Adress</label>
+</div>
+     <div class="field">
+        <input id="password" type="password" required>
+        <label>Password</label>
+     </div>
+     <div class="field">
+        <input id="confirmPassword" type="password" required>
+        <label>confirm your Password</label>
+     </div>
+     <div class="content">
+        <div class="checkbox">
+           <input type="checkbox" id="remember-me">
+           <label for="remember-me">Remember me</label>
+        </div>
+        <div class="pass-link">
+           <a href="#">Forgot password?</a>
+        </div>
+     </div>
+     <div class="field">
+      <button id="registerbutton" type="submit">Register</button>
+       <!--  <input type="submit" value="Login"> -->
+     </div>
+     <div class="signup-link">
+        already a member? <a href="/src/modules/signin.html">Signin now</a>
+     </div>
+  </form>
+</div>
+
+<script src="/src/Js/signup.js"></script>
+</body>
+</html>

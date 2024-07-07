@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Formulaire de contact CY PC-Play</title>
+    <link rel="stylesheet" href="/src/css/contact-style.css">
+    <link rel="stylesheet" href="/src/css/Header.css">
+    <link rel="stylesheet" href="/src/css/homepage-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- <script type="text/javascript" src="form.js"></script> -->
+    
+</head>
+
+
+<body>
+    <!--En-tête-->
+
+    <div class="top-bar">
+        <div class="left">
+            <img id="cy-logo" src="/src//pictures/cy-logo-white.png" >
+            <p id="cy-play-logo-Text">PLAY</p>
+        </div>
+        <div class="center">
+                <input id="search-box" type="search" placeholder="Search...">
+                <button id="search-button" type="submit">
+                    <img id="search-icon" src="/src//pictures/icons/search-icon.png" alt="">
+                </button>
+            
+        </div>
+        <div class="right">
+            <button class="basket-button">
+                &#128722;
+            </button>
+
+            <div class="account-div">
+                <button id="account-button">
+                    <img id="profile-picture" src="/src/pictures/icons/profileicon.webp" alt="">
+                </button>
+                <p id="account-name">Se Connecter</p>
+                <button id="logout">Deconnecter</button>
+
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    <!-- Formulaire de contact -->
+
+        <!--Corps du formulaire-->
+        <div class="formulaire">
+            <main>
+                <h1>Ici CY Play, on vous écoute!</h1><br><br>
+                
+                <form id="form" name="check" action="" method="post">
+                    <div class="form-box-container">
+                        <label for="contact">Date de contact* :</label>
+                        <input id="contact_date" type="date" name="ladate" value=" jj/mm/aaaa">
+                        <p class="alert" id="alert-contact_date" style="display: none;">Renseigner svp</p><br>
+                    </div>
+                    
+                    
+                    <div class="form-box-container">
+                        <label for="nom">Nom :</label>
+                        <input placeholder="Votre Nom" id="nom" type="text" name="lenom" value=" Votre Nom" >
+                        <p class="alert" id="alert-nom">Renseigner svp</p><br>
+                    </div>
+
+                    <div class="form-box-container">
+                        <label for="prenom">Prénom :</label>
+                        <input placeholder="Votre Prénom" id="prenom" type="text" name="leprenom" value=" Votre Prénom" >
+                        <p class="alert" id="alert-prenom" name="alert">Renseigner svp</p><br>
+                    </div>
+                    
+                    <div class="form-box-container">
+                        <label for="mail">Email* :</label>
+                        <input placeholder="Votre Email" id="mail" type="text" name="lemail" value=" Votre email" >
+                        <p class="alert" id="alert-mail" name="alert">Renseigner svp</p><br>
+                    </div>
+                    
+                    
+                    <div class="form-box-container" id="Genre">
+                        <span>Genre :</span><br>
+                        <!--AJUSTER AVEC INPUT/DATALIST-->
+                        <input id="f" type="radio" name="genre" value="Femme">
+                        <label for="f">Femme</label>
+                        <input id="h" type="radio" name="genre" value="Homme">
+                        <label for="h">Homme</label>
+                        <input id="x" type="radio" name="genre" value="Autre">
+                        <label for="x">Autre</label>
+                        <p class="alert" id="alert-genre" name="alert">Renseigner svp</p>
+                    </div>
+                    
+                    <div class="form-box-container">
+                        <label for="naissance">Date de naissance :</label>
+                        <input id="naissance" type="date" name="lanaissance" >
+                        <p class="alert" id="alert-birth" name="alert">Birth svp</p>
+                    </div>
+                    
+                    <div class="form-box-container">
+                        <label for="fonction">Fonction* :</label>
+                        <select id="fonction" name="metier">
+                            <option value="Particulier">Particulier</option>
+                            <option value="Pro Gamer">Pro Gamer</option>
+                            <option value="Fournisseur">Fournisseur</option>
+                        </select>
+                        <p class="alert" id="alert-metier" name="alert">Renseigner svp</p>
+                    </div>
+                    
+                    <div class="form-box-container">
+                        <label for="sujet">Sujet* :</label>
+                        <input id="sujet" type="text" name="lesujet" value=" Nom du sujet" placeholder="Sujet">
+                        <p class="alert" id="alert-sujet" name="alert">Renseigner svp</p>
+                    </div>
+    
+                    <div class="form-box-container">
+                        <label style="margin-bottom: 5px;" for="message">Contenu* :</label>
+                        <textarea placeholder="Votre message" style="width: 100%;" id="message" name="lemessage" rows="5" cols="75" ></textarea>
+                        <p class="alert" id="alert-message" name="alert">Renseigner svp</p>
+                    </div>
+                    
+                    <input id="submit-button" type="submit" value="Envoyer">
+                </form>
+                
+            </main>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer></footer>
+    <script src="/src/Js/contact.js"></script>
+    <script src="/src/Js/logout.js"></script>  
+    <script src="/src/Js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(rgb(34, 34, 34),#2660aa);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+form {
+    position: fixed;
+    
+    max-width: 700px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centre le formulaire horizontalement */
+    
+}
+
+h1 {
+    color: silver
+}
+
+label, span {
+    display: inline-block; /* Aligner les labels les uns sous des autres */
+    width: 150px;
+    text-align: right; /* Aligner le texte des labels à droite */
+    margin-right: 10px; /* Marge entre les labels et les champs */
+    color: silver;
+}
+
+input[type="date"] {
+    margin-bottom: 10px;
+}
+
+select {
+    margin-bottom: 10px;
+    width: 100px
+}
+
+label[for="f"], label[for="h"], label[for="x"] {
+    width: 50px;
+}
+
+
+input[type="text"], textarea {
+    width: 400px;
+    margin-bottom: 10px; /* Marge entre les champs */
+}
+
+input[type="text"], select, input[type="submit"] {
+    border-radius: 20px;  /* Bordures arrondies */
+    border-width: 1px;
+}
+
+textarea {
+    vertical-align: top; /* Alignement vertical */
+    border-radius: 10px;
+}
+
+
+/* Styliser le background */
+
+
+input, textarea {
+    background: linear-gradient(rgb(165, 212, 250),rgba(183, 187, 192, 0.89))
+}

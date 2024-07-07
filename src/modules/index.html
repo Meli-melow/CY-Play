@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google font (Roboto) inclusion -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- CSS stylesheets for header and main styles -->
+    <link rel="stylesheet" href="/src/css/Header.css">
+    <link rel="stylesheet" href="/src/css/acceuil-style.css">
+    <link rel="stylesheet" href="/src/css/catalogue.css">
+    
+    <title>Accueil</title>
+</head>
+
+<body>
+
+    <!-- Top navigation bar containing logo, search function, basket icon, and account section -->
+    <div class="top-bar">
+        <!-- Left section with logo and 'PLAY' text -->
+        <div class="left">
+            <img id="cy-logo" src="/src/pictures/cy-logo-white.png">
+            <p id="cy-play-logo-Text">PLAY</p>
+        </div>
+        
+        <!-- Center section with search box and button -->
+        <div class="center">
+            <input id="search-box" type="search" placeholder="recherche...">
+            <button id="search-button" type="submit">
+                <img id="search-icon" src="/src/pictures/icons/search-icon.png" alt="">
+            </button>
+        </div>
+        
+        <!-- Right section with basket button and account information -->
+        <div class="right">
+            <button class="basket-button">
+                &#128722; <!-- Basket icon -->
+                <div class="dropdown-content">
+                   No items in basket
+                </div>
+            </button>
+            
+
+            <div class="account-div">
+                <button id="account-button">
+                    <img id="profile-picture" src="/src/pictures/icons/profileicon.webp" alt="">
+                </button>
+                <p id="account-name">Se Connecter</p>
+                <button id="logout">Deconnecter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Placeholder for horizontal navigation -->
+    <nav class="horizontal-nav">
+    </nav>
+
+    <!-- Vertical navigation menu with titles -->
+    <aside class="vertical-nav">
+        <h2 id="h-in-vertical-nav">CY PLAY</h2>
+        <h3 id="h-in-vertical-nav">Accueil</h3>
+
+    <div class="left-side">
+        <ul id="nav">
+        	<li class="nav-link">
+        		<h1  class="navigation-h1" data-name="accueil">Home</h1>
+        	</li>
+        	<li class="nav-link">
+        		<h1 class="navigation-h1" data-name="À Propos">À Propos</h1>
+        	</li>
+        	<li class="nav-link">
+        		<h1 class="navigation-h1" data-name="contact">contact</h1>
+        	</li>
+        </ul>
+    </div>
+
+       
+
+    </aside>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Skew menu with navigation items -->
+        <nav class="skew-menu">
+            <ul>
+              <li><a href="#" category-name = "Ventilateur boitier">Ventilateur boîtier</a>
+                <!-- <div class="dropdown-content">
+                    <a href="#" category-name = "MSI">MSI</a>
+                    <a href="#" category-name = "HP">HP</a>
+                    <a href="#" category-name = "Dell">Dell</a>
+                </div> -->
+            </li>
+
+            
+              
+            <li><a href="#" category-name = "Ventilateur Watercooling">Ventilateur Watercooling</a>
+                <!-- <div class="dropdown-content">
+                  <a href="#" category-name = "RPG">RPG</a>
+                  <a href="#" category-name = "Battle Royale">Battle Royale</a>
+                  <a href="#" category-name = "Simulation">Simulation</a>
+                </div> -->
+            </li>
+              <li>
+                <a href="#" category-name = "Ventilateur processeur">Ventilateur processeur</a>
+                <!-- <div class="dropdown-content">
+                  <a href="#" category-name = "console">console</a>
+                  <a href="#" category-name = "mouse">mouse</a>
+                  <a href="#" category-name = "keyboards">keyboards</a>
+                </div> -->
+            <!-- </li>
+              <li>
+                <a href="#" category-name = "Components">Components</a>
+                <div class="dropdown-content">
+                  <a href="#" category-name = "Mother board">Mother board</a>
+                  <a href="#" category-name = "CPU">CPU</a>
+                  <a href="#" category-name = "Simulation">Simulation</a>
+                </div>
+            </li> -->
+              
+            </ul>
+        </nav>
+
+        <!-- Main header and featured image -->
+        <h2 style="margin-top: 40px;">"Le plaisir de Jeu avec CY Play"</h2>
+        
+    <div class="month-product-container">
+        <img id="month-product-image" src="" alt="Month-product">
+        <h2 style="color: rgb(61, 61, 61); font-size: 22px; " id="month-product-name">Month Product name</h2>
+        <p style="color: rgb(61, 61, 61);font-size: 16px; " id="month-product-description">Month Product description</p>
+    </div>
+        
+    <!-- Product display area -->
+      <ul class="Product-list">
+      
+      </ul>
+
+    </main>
+
+    <!-- Footer with contact info and copyright -->
+    <footer>
+        <p>Pour contacter notre équipe de service, veuillez composer le 03.22.84.65.74 afin de passer une commande.</p>
+        <p>Copyright © CY Play</p>
+        <p>CY Play</p>
+    </footer>
+
+    <!-- JavaScript file for dynamic behavior -->
+    <script src="/src/Js/index.js"></script>
+    <script src="/src/Js/updateMonthProduct.js"></script>
+    <script src="/src/Js/session_handler.js"></script>
+    <script src="/src/Js/fetch_commands.js"></script>
+    <script src="/src/Js/fetch_product.js"></script>
+    <script src="/src/Js/logout.js"></script>
+    
+
+</body>
+
+</html>
